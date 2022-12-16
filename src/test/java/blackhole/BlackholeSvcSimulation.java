@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class BlackholeSvcSimulation extends Simulation {
 
  HttpProtocolBuilder httpProtocol = http
-	.baseUrl("https://frontline-qal5-k8s.intuit.services.gateway.ppdmeshtestblackhole.mesh");
+	.baseUrl("http://frontline-qal5-k8s.intuit.services.gateway.ppdmeshtestblackhole.mesh");
 
  ScenarioBuilder scn = scenario("FrontlineMeshBlackholeScenario")
 		.exec(http("simpleGet")
